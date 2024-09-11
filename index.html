@@ -10,8 +10,8 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f9;
-        color: #333;
+        background-color: #f2f5f7; /* Светло-голубой фон страницы */
+        color: #003366; /* Синий цвет текста */
       }
 
       /* Шапка */
@@ -37,20 +37,51 @@
         max-width: 800px;
         margin: 20px auto;
         padding: 20px;
-        background-color: white;
+        background-color: #ffffff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
-        text-align: center; /* Выровняем текст по центру */
+        text-align: left;
+      }
+
+      .platillos-section,
+      .desayuno-section {
+        background-color: #d6e0f5; /* Более насыщенный голубой фон для Platillos и Desayuno */
+        padding: 20px;
+        border-radius: 10px;
       }
 
       h2 {
         font-size: 1.5em;
-        color: #003366; /* Тёмно-синий цвет */
+        color: #003366;
+        margin-top: 40px;
       }
 
       .menu-item {
         margin: 10px 0;
         font-size: 1.2em;
+      }
+
+      .menu-item small {
+        display: block;
+        font-size: 0.9em;
+        color: #555; /* Менее насыщенный цвет для подписей под блюдами */
+      }
+
+      /* Стили для отдельных надписей с фоном */
+      .highlight {
+        background-color: #e6f7ff;
+        padding: 5px;
+        border-radius: 5px;
+        display: inline-block;
+      }
+
+      .highlight-blue {
+        color: #fff;
+        background-color: #003366; /* Насыщенный синий для "Sopa del día" и "Desayuno del día" */
+        padding: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        font-weight: bold;
       }
 
       /* Маркетинговый блок */
@@ -98,30 +129,175 @@
     <!-- Шапка страницы с логотипом -->
     <header>
       <img
-        src="img/converted_logo_3.png"
+        src="/img/converted_logo_3.png"
         alt="Logotipo del Hospital Americano"
       />
       <h1>Menú del Cafetería</h1>
-      <p>(Esta es una versión preliminar del menú para demostración)</p>
     </header>
 
-    <!-- Секция меню -->
+    <!-- Первая страница -->
+    <div class="menu-section desayuno-section">
+      <h2>Desayuno</h2>
+      <p class="menu-item">Avena con manzana y nuez - $65</p>
+      <p class="menu-item">Orden de fruta - $70</p>
+      <p class="menu-item">Fruta con yogurt y granola - $85</p>
+      <p class="menu-item">Yogurt - $40</p>
+      <p class="menu-item">Orden de hotcakes - $90</p>
+      <p class="menu-item">Pan francés - $90</p>
+      <p class="menu-item">
+        <span class="highlight-blue">Desayuno del día</span> - $85
+      </p>
+    </div>
     <div class="menu-section">
-      <h2>Platos Principales</h2>
-      <p class="menu-item">Tacos de carne asada - $120 MXN</p>
-      <p class="menu-item">Enchiladas verdes - $95 MXN</p>
-      <p class="menu-item">Quesadillas de queso - $80 MXN</p>
+      <h2>Huevos</h2>
+      <p class="menu-item small">
+        Incluye una guarnición de frijoles refritos y pan, totopos o tortillas.
+      </p>
+      <p class="menu-item">A la mexicana - $80</p>
+      <p class="menu-item">Estrellados - $60</p>
+      <p class="menu-item">Rancheros - $80</p>
+      <p class="menu-item">Revueltos con jamón - $80</p>
+      <p class="menu-item">Divorciados con salsa verde o roja - $80</p>
+      <p class="menu-item">Huevos con chorizo o tocino - $85</p>
+      <p class="menu-item">Huevos motuleños - $110</p>
+      <p class="menu-item">
+        <span class="highlight">Extra: Jamón, queso, tocino o chorizo</span> -
+        $20
+      </p>
 
-      <h2>Bebidas</h2>
-      <p class="menu-item">Agua de horchata - $35 MXN</p>
-      <p class="menu-item">Café Americano - $40 MXN</p>
-      <p class="menu-item">Jugo de naranja - $50 MXN</p>
+      <h2>Ensaladas</h2>
+      <p class="menu-item">Ensalada mixta - $75</p>
+      <p class="menu-item">Plato de frutas de la estación - $80</p>
 
-      <h2>Postres</h2>
-      <p class="menu-item">Churros con chocolate - $50 MXN</p>
-      <p class="menu-item">Flan casero - $60 MXN</p>
+      <h2>Tacos</h2>
+      <p class="menu-item small">
+        La orden incluye 3 tacos servidos y una guarnición de frijoles refritos.
+      </p>
+      <p class="menu-item">Fajitas de pollo - $110</p>
+      <p class="menu-item">Tinga de pollo - $110</p>
+      <p class="menu-item">Pollo con queso - $120</p>
+      <p class="menu-item">Bisteck - $110</p>
+      <p class="menu-item">Bisteck con queso - $120</p>
+
+      <h2>Tortas y sándwiches</h2>
+      <p class="menu-item small">Incluyen papas a la francesa.</p>
+      <p class="menu-item">Jamón con queso - $75</p>
+      <p class="menu-item">Huevo con chorizo - $75</p>
+      <p class="menu-item">Pollo guisado - $95</p>
+      <p class="menu-item">Milanesa - $100</p>
+      <p class="menu-item">Cubana - $115</p>
+      <p class="menu-item">Club sándwich - $115</p>
+    </div>
+    <!-- Вторая страница -->
+    <div class="menu-section platillos-section">
+      <h2>Platillos</h2>
+      <p class="menu-item">
+        Milanesa de pollo <br /><small
+          >Con una guarnición de papas, ensalada y arroz.</small
+        >
+        - $130
+      </p>
+      <p class="menu-item">
+        Milanesa de res <br /><small
+          >Con una guarnición de papas, ensalada y arroz.</small
+        >
+        - $140
+      </p>
+      <p class="menu-item">
+        Enfrijoladas con chorizo o rellenos de huevo <br />
+        - $100
+      </p>
+      <p class="menu-item">
+        Enchiladas de pollo <br /><small>(Con salsa verdes, roja o mole)</small>
+        - $120
+      </p>
+      <p class="menu-item">
+        Fajitas de pollo <br /><small
+          >Con una guarnición de frijoles refritos y arroz.</small
+        >
+        - $130
+      </p>
+      <p class="menu-item">
+        Fajitas de res <br /><small
+          >Con una guarnición de frijoles refritos y arroz.</small
+        >
+        - $140
+      </p>
+      <p class="menu-item">
+        Chilaquiles con pollo <br /><small>(Con salsa verdes o roja)</small>
+        - $100
+      </p>
+      <p class="menu-item">
+        Carne asada con chilaquiles <br />
+        - $140
+      </p>
+      <p class="menu-item">
+        Pollo en mole poblano <br /><small
+          >Con una guarnición de frijoles refritos y arroz.</small
+        >
+        - $145
+      </p>
+      <p class="menu-item">
+        Molletes de frijoles con queso gratinado <br />
+        - $90
+      </p>
+      <p class="menu-item">
+        <span class="highlight-blue">Comida del día</span> - $120
+      </p>
     </div>
 
+    <div class="menu-section">
+      <h2>Quesadillas</h2>
+      <p class="menu-item small">
+        La orden incluye 3 quesadillas, una guarnición de frijoles y aguacate.
+      </p>
+      <p class="menu-item">Queso - $75</p>
+      <p class="menu-item">Jamón y queso - $85</p>
+      <p class="menu-item">Pollo y queso - $95</p>
+      <p class="menu-item">
+        Sincronizadas de jamón y queso con guacamole - $85
+      </p>
+
+      <h2>Sopas</h2>
+      <p class="menu-item">Sopa de tortilla - $95</p>
+      <p class="menu-item">
+        Caldo tlalpeño - $105 <br /><small
+          >Elaborado con pollo, jitomate, aguacate, arroz, quieso y
+          chipotle</small
+        >
+      </p>
+      <p class="menu-item">Sopa de verduras con arroz y pollo - $85</p>
+      <p class="menu-item">Consomé de pollo con arroz - $85</p>
+      <p class="menu-item">
+        <span class="highlight-blue">Sopa del día</span> - $70
+      </p>
+
+      <h2>Postres</h2>
+      <p class="menu-item">Arroz con leche - $50</p>
+      <p class="menu-item">Plátanos con crema - $40</p>
+      <p class="menu-item">Pastel del día - $35</p>
+      <p class="menu-item">Flan - $30</p>
+      <p class="menu-item">Gelatina - $20</p>
+      <p class="menu-item">
+        Bisquet con mantequilla y mermelada (1 pieza) - $20
+      </p>
+      <p class="menu-item">Pan dulce (1 pieza) - $20–$25</p>
+
+      <h2>Botanas</h2>
+      <p class="menu-item">Orden de papas a la francesa - $50</p>
+      <p class="menu-item">Orden de guacamole - $65</p>
+
+      <h2>Bebidas</h2>
+      <p class="menu-item">Jugo de mango (Natural) - $40</p>
+      <p class="menu-item">Jugo de naranja o toronja - $35</p>
+      <p class="menu-item">Jugo de naranja con papaya - $40</p>
+      <p class="menu-item">Jugo de manzana (Tetrapack) - $30</p>
+      <p class="menu-item">Licuados de frutas con leche - $55</p>
+      <p class="menu-item">Leche o chocomilk (frío o caliente) - $35</p>
+      <p class="menu-item">Licuado con fruta o chocomilk (1 lt.) - $90</p>
+      <p class="menu-item">Café americano - $20</p>
+      <p class="menu-item">Café frío - $35</p>
+    </div>
     <!-- Маркетинговое предложение -->
     <div class="offer">
       ¡Recibe un nachos gratis al suscribirte a nuestro

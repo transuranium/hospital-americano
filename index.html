@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú del Cafetería - Hospital Americano</title>
+    <style>
+      /* Основные стили */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      /* Шапка */
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #003366; /* Тёмно-синий цвет из логотипа */
+        color: white;
+      }
+
+      header img {
+        max-width: 100px;
+        border-radius: 50%; /* Делаем логотип круглым */
+      }
+
+      h1 {
+        font-size: 2em;
+        margin: 20px 0;
+      }
+
+      /* Стили секции меню */
+      .menu-section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center; /* Выровняем текст по центру */
+      }
+
+      h2 {
+        font-size: 1.5em;
+        color: #003366; /* Тёмно-синий цвет */
+      }
+
+      .menu-item {
+        margin: 10px 0;
+        font-size: 1.2em;
+      }
+
+      /* Маркетинговый блок */
+      .offer {
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ff69b4; /* Розовый цвет для выделения */
+        color: white;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        border-radius: 10px;
+      }
+
+      .offer a {
+        color: #fff;
+        text-decoration: underline;
+      }
+
+      .offer a:hover {
+        text-decoration: none;
+      }
+
+      /* Стили для мобильных устройств */
+      @media (max-width: 600px) {
+        body {
+          font-size: 1.5em;
+        }
+
+        h1 {
+          font-size: 1.8em;
+        }
+
+        h2 {
+          font-size: 1.3em;
+        }
+
+        .menu-item {
+          font-size: 1.1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Шапка страницы с логотипом -->
+    <header>
+      <img
+        src="/img/converted_logo_3.png"
+        alt="Logotipo del Hospital Americano"
+      />
+      <h1>Menú del Cafetería</h1>
+      <p>(Esta es una versión preliminar del menú para demostración)</p>
+    </header>
+
+    <!-- Секция меню -->
+    <div class="menu-section">
+      <h2>Platos Principales</h2>
+      <p class="menu-item">Tacos de carne asada - $120 MXN</p>
+      <p class="menu-item">Enchiladas verdes - $95 MXN</p>
+      <p class="menu-item">Quesadillas de queso - $80 MXN</p>
+
+      <h2>Bebidas</h2>
+      <p class="menu-item">Agua de horchata - $35 MXN</p>
+      <p class="menu-item">Café Americano - $40 MXN</p>
+      <p class="menu-item">Jugo de naranja - $50 MXN</p>
+
+      <h2>Postres</h2>
+      <p class="menu-item">Churros con chocolate - $50 MXN</p>
+      <p class="menu-item">Flan casero - $60 MXN</p>
+    </div>
+
+    <!-- Маркетинговое предложение -->
+    <div class="offer">
+      ¡Recibe un nachos gratis al suscribirte a nuestro
+      <a
+        href="https://www.facebook.com/HospitalAmericano/?locale=es_LA"
+        target="_blank"
+        >Facebook</a
+      >
+      o
+      <a href="https://www.instagram.com/hospitalamericano/" target="_blank"
+        >Instagram</a
+      >!
+    </div>
+  </body>
+</html>
